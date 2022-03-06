@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Doc</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .header {
+            display: inline-flex;
+            flex-direction: row;
+            background: #031f30;
+            position: fixed;
+            line-height: 50px;
+            width: 100vw;
+            font-family: "Open Sans", sans-serif;
+
+        }
+
+        h1 {
+            color: white;
+            margin-left: 40px;
+            gap: 50px;
+        }
+
+        #search {
+            background-color: rgba(76, 76, 76, 0.47);
+            color: #fff;
+            padding: 6px;
+            box-shadow: none;
+            border: 0;
+        }
+
+        .header .logo {
+            line-height: normal;
+            padding-left: 0px;
+            margin: 5px;
+        }
+
+        .header .links ul {
+            line-height: 18px;
+            display: inline-flex;
+            flex-direction: row;
+        }
+
+        .links ul>li {
+            list-style: none;
+            font-size: 16px;
+            margin: 15px;
+        }
+
+        .links ul>li>a {
+            text-decoration: none;
+            color: #9cd4f7;
+            padding-bottom: 12px;
+        }
+
+        .header links li a.active,
+        a:hover {
+            border-bottom: 4px #9cd4f7 solid;
+        }
+
+        .sidebar {
+            background-color: #0f1c24;
+            backdrop-filter: blur(15px);
+            width: 290px;
+            height: 100vh;
+            position: fixed;
+            padding-left: 20px;
+            bottom: -50.3px;
+            left: 0;
+            overflow-y: auto;
+
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #9cd4f7;
+            font-size: 16px;
+            margin: 10px;
+            display: block;
+            padding-left: 0;
+            
+        }
+
+        .menu ul li {
+            list-style: none;
+            line-height: 50px;
+            
+        }
+
+        .menu ul ul {
+            position: static;
+            display: none;
+            
+        }
+
+        .menu ul ul li {
+            border-bottom: none;
+            
+        }
+        .container{
+            padding: 340px;
+            height: 100vh;
+            background-color: #031f30;
+            background-repeat: no-repeat;
+            background-size: contain;
+            color: #fff;
+        }
+        .second {
+            float: left;
+            margin-top: -48vh;
+            margin-left: 0vh;
+            color: white;   
+        }
+       
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+                <h1>HTML Doc &nbsp;</h1>
+        </div>
+        <div class="icon">
+            <input id="search" type="search box" placeholder="Search html Doc">
+            &nbsp;
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Guides</a></li>
+                <li><a href="#">Manuals</a></li>
+                <li><a href="#">References</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="menu">
+            <ul>
+                <li><a href="#">HTML overview</a></li>
+                <li><a href="#">Get HTML</a></li>
+                <li>
+                    <a href="#">Get Started</a>
+                    <span class="fas fa-caret-down"></span>
+                    <ul>
+                        <li><a href="#">part1:Getting Started</a></li>
+                        <li><a href="#">part1:Getting Started</a></li>
+                        <li><a href="#">part1:Getting Started</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="second">
+            <h2>html overview</h2>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                &nbsp;
+                <h2>html overview</h2>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+       
+    </div>
+    
+    
+    
+
+</body>
+
+</html>
